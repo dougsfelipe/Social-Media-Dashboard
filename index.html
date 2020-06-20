@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row justify-content-between">
+      <div class="title">
+        <h1>Social Media Dashboard</h1>
+        <h4>Total Followers: 23,004</h4>
+      </div>
+
+      <div class="toogle"> Dark Mode
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+    </div>
+
+
+    <div class="row justify-content-between cards">
+
+
+      <div class="card text-center" id="facebook">
+
+        <div class="user">
+          <img src="images/icon-facebook.svg" alt="" style="padding-right: 10px;"> @nathanf
+        </div>
+
+        <h2>1044</h2>
+
+        <h3>
+          Followers
+        </h3>
+
+        <div class="checkday">
+          <img src="images/icon-up.svg" alt="" style="padding-right: 5px;"> 12 Today
+        </div>
+
+      </div>
+
+      <div class="card text-center" id="twiter">
+
+        <div class="user">
+          <img src="images/icon-twitter.svg" alt="" style="padding-right: 10px;"> @nathanf
+        </div>
+
+        <h2>1987</h2>
+
+        <h3>
+          Followers
+        </h3>
+
+        <div class="checkday">
+          <img src="images/icon-up.svg" alt="" style="padding-right: 5px;"> 99 Today
+
+        </div>
+
+      </div>
+
+
+      <div class="card text-center" id="instagram">
+
+        <div class="user">
+          <img src="images/icon-instagram.svg" alt="" style="padding-right: 10px;"> @realnathanf
+        </div>
+
+        <h2>11k</h2>
+
+        <h3>
+          Followers
+        </h3>
+
+
+        <div class="checkday">
+          <img src="images/icon-up.svg" alt="" style="padding-right: 5px;"> 1099 Today
+
+        </div>
+
+      </div>
+
+
+      <div class="card text-center" id="youtube">
+
+        <div class="user">
+          <img src="images/icon-youtube.svg" alt="" style="padding-right: 10px;"> Nathan F.
+        </div>
+
+        <h2>8239</h2>
+
+        <h3>
+          Subscribers
+        </h3>
+
+        <div class="checkday">
+          <img src="images/icon-up.svg" alt="" style="padding-right: 5px;"> 144 Today
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="row overview">
+      <h6>Overview - Today</h6>
+    </div>
+    <div class="row justify-content-between cards">
+
+      <div class="card-overview  card1">
+        <div class="user-overview-top text-between">
+          Page Views<img src="images/icon-facebook.svg" style="float: right"="">
+        </div>
+
+        <div class="user-overview-down">
+          87
+          <span id="number-overview" style="float: right;" class="green"><img src="images/icon-up.svg" alt=""
+              style="padding-right: 5px;"> 3%</span>
+        </div>
+      </div>
+
+
+
+      <div class="card-overview">
+        <div class="user-overview-top text-between">
+          Likes<img src="images/icon-facebook.svg" style="float: right"="">
+        </div>
+
+        <div class="user-overview-down">
+          52
+          <span id="number-overview" style="float: right;" class="red"><img src="images/icon-down.svg" alt=""
+              style="padding-right: 5px;">2%</span>
+        </div>
+      </div>
+
+
+
+      <div class="card-overview">
+        <div class="user-overview-top text-between">
+          Likes<img src="images/icon-instagram.svg" style="float: right"="">
+        </div>
+
+        <div class="user-overview-down">
+          5462
+          <span id="number-overview" style="float: right;" class="green"><img src="images/icon-up.svg" alt=""
+              style="padding-right: 5px;">2257%</span>
+        </div>
+      </div>
+
+
+
+
+      <div class="card-overview">
+        <div class="user-overview-top text-between">
+          Profile Views<img src="images/icon-instagram.svg" style="float: right"="">
+        </div>
+
+        <div class="user-overview-down">
+          52k
+          <span id="number-overview" style="float: right;" class="green"><img src="images/icon-up.svg" alt=""
+              style="padding-right: 5px;">1375%</span>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="row justify-content-between cards">
+
+      <div class="card-overview" id="card2">
+        <div class="user-overview-top text-between">
+          Retweets<img src="images/icon-twitter.svg" style="float: right"="">
+        </div>
+
+        <div class="user-overview-down">
+          87
+          <span id="number-overview" style="float: right;" class="green"><img src="images/icon-up.svg" alt=""
+              style="padding-right: 5px;">303%</span>
+        </div>
+      </div>
+
+
+
+      <div class="card-overview">
+        <div class="user-overview-top text-between">
+          Likes<img src="images/icon-twitter.svg" style="float: right"="">
+        </div>
+
+        <div class="user-overview-down">
+          507
+          <span id="number-overview" style="float: right;" class="green"><img src="images/icon-up.svg" alt=""
+              style="padding-right: 5px;"> 553%</span>
+        </div>
+      </div>
+
+
+
+      <div class="card-overview">
+        <div class="user-overview-top text-between">
+          Likes<img src="images/icon-youtube.svg" style="float: right"="">
+        </div>
+
+        <div class="user-overview-down">
+          107
+          <span id="number-overview" style="float: right;" class="red"><img src="images/icon-down.svg" alt=""
+              style="padding-right: 5px;"> 19%</span>
+        </div>
+      </div>
+
+
+
+
+      <div class="card-overview">
+        <div class="user-overview-top text-between">
+          Page Views<img src="images/icon-youtube.svg" style="float: right"="">
+        </div>
+
+        <div class="user-overview-down">
+          1407
+          <span id="number-overview" style="float: right;" class="red"><img src="images/icon-down.svg" alt=""
+              style="padding-right: 5px;"> 12%</span>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    
+
+  
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><mark>Frontend Mentor</mark></a>.
+    Coded by <a href="https://github.com/dougsfelipe"><mark>Douglas Santos</mark></a>.
+  </div>
+</body>
+
+</html>
